@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Header } from "../layout/Header";
 import { Footer } from "../layout/Footer";
@@ -6,14 +7,15 @@ import { ActionPlanSection } from "./ActionPlanSection";
 
 export const DevelopmentPlanPage: React.FC = () => {
   return (
-    <div className="bg-[#F8F9FA] flex flex-col overflow-hidden items-stretch">
+    <div className="bg-[#F8F9FA] flex flex-col overflow-hidden items-stretch min-h-screen">
       <Header />
       
-      <main className="bg-white shadow-[0px_1px_2px_rgba(0,0,0,0.3)] self-center flex w-[600px] max-w-full flex-col items-stretch px-6 py-[23px] max-md:px-5">
+      <main className="bg-white shadow-[0px_1px_2px_rgba(0,0,0,0.3)] self-center flex w-[600px] max-w-full flex-col items-stretch px-6 py-[23px] my-6 max-md:px-5">
         <PersonalInfoSection />
         <ActionPlanSection />
       </main>
       
+      <div className="flex-grow"></div>
       <Footer />
     </div>
   );

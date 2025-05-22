@@ -1,3 +1,4 @@
+
 import React from "react";
 
 interface ActionItemProps {
@@ -7,7 +8,7 @@ interface ActionItemProps {
 
 export const ActionItem: React.FC<ActionItemProps> = ({ action, deadline }) => {
   return (
-    <div className="w-full" space={14}>
+    <div className="w-full">
       <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
         <div className="w-9/12 max-md:w-full max-md:ml-0">
           <div className="relative flex min-h-28 grow items-stretch text-[#171D1A] rounded-xl max-md:mt-3.5">

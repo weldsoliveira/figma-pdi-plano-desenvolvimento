@@ -1,10 +1,11 @@
+
 import React from "react";
 import { ActionPlanItem } from "./ActionPlanItem";
 
 export const ActionPlanSection: React.FC = () => {
   const actionPlans = [
     {
-      action: "Participar de um workshop de liderança e gestão de equipes.",
+      action: "Participar de um workshop de liderança e gestão de equipes para desenvolver habilidades de liderança situacional.",
       deadline: "31/03/2025",
       results: [
         "Melhoria na comunicação com a equipe.",
@@ -20,7 +21,7 @@ export const ActionPlanSection: React.FC = () => {
       ]
     },
     {
-      action: "Participar de um programa de desenvolvimento pessoal focado em habilidades interpessoais (ex: comunicação, trabalho em equipe).",
+      action: "Participar de um programa de desenvolvimento pessoal focado em habilidades interpessoais (ex: comunicação assertiva, trabalho em equipe).",
       deadline: "30/09/2025",
       results: [
         "Melhoria nas relações interpessoais, com feedback positivo de pelo menos 80% dos colegas.",
@@ -28,7 +29,7 @@ export const ActionPlanSection: React.FC = () => {
       ]
     },
     {
-      action: "Liderar um projeto de melhoria contínua em um processo específico da linha de produção.",
+      action: "Liderar um projeto de melhoria contínua em um processo específico da linha de produção, aplicando metodologias Lean.",
       deadline: "31/12/2025",
       results: [
         "Identificação e implementação de pelo menos 2 melhorias que resultem em uma redução de custos de 15%.",
