@@ -1,6 +1,7 @@
 
 import React from "react";
 import { ActionPlanItem } from "./ActionPlanItem";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
 
 export const ActionPlanSection: React.FC = () => {
   const actionPlans = [
@@ -38,6 +39,15 @@ export const ActionPlanSection: React.FC = () => {
     }
   ];
 
+  const newActionPlan = {
+    action: "Desenvolver competências em análise de dados e ferramentas de Business Intelligence para melhorar a tomada de decisão.",
+    deadline: "28/02/2026",
+    results: [
+      "Criação de 3 dashboards analíticos para acompanhamento de indicadores-chave do departamento.",
+      "Redução de 25% no tempo de preparação de relatórios mensais através da automação de processos."
+    ]
+  };
+
   return (
     <section>
       <h2 className="text-[#1F6A4E] text-[28px] font-medium leading-[52px] mt-9">
@@ -53,6 +63,22 @@ export const ActionPlanSection: React.FC = () => {
             isLast={index === actionPlans.length - 1}
           />
         ))}
+        
+        <Accordion type="single" collapsible className="mt-6">
+          <AccordionItem value="new-action" className="border-0">
+            <AccordionTrigger className="py-2 hover:no-underline">
+              <span className="text-[#1F6A4E] font-medium">+ Adicionar nova ação</span>
+            </AccordionTrigger>
+            <AccordionContent>
+              <ActionPlanItem
+                action={newActionPlan.action}
+                deadline={newActionPlan.deadline}
+                results={newActionPlan.results}
+                isLast={true}
+              />
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </div>
     </section>
   );
